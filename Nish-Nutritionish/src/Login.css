@@ -40,14 +40,14 @@
   background: linear-gradient(135deg, #ffb3a7 0%, #ff9a8b 100%);
   /* Pale salmon/reddish-orange */
   z-index: 3;
-  transform: translateY(-10px);
+  transform: translateY(-80px);
 }
 
 .arc-layer-2 {
   background: linear-gradient(135deg, #ff8c75 0%, #ff6b5a 100%);
   /* Vibrant orange-red */
   z-index: 2;
-  transform: translateY(-5px);
+  transform: translateY(-40px);
 }
 
 .arc-layer-3 {
