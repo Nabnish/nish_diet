@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Login.css'
 
+
 function Login() {
   const [credentials, setCredentials] = useState({
     name: ''
@@ -18,7 +19,7 @@ function Login() {
     setError('')
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) =>  {
     e.preventDefault()
     
     // Basic validation
@@ -33,6 +34,8 @@ function Login() {
     // For demo purposes, you can add actual authentication logic here
     // Example: if (credentials.email === 'user@example.com' && credentials.password === 'password') { ... }
   }
+
+
 
   return (
     <div className="login-container">
