@@ -61,6 +61,7 @@ function Admin() {
                                 onChange={handleChange}
                                 placeholder="Enter your password" />
                             {error && <div className="error_dialog">{error}</div>}
+                            <button type="submit">Login</button>
 
 
 
