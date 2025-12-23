@@ -1,6 +1,7 @@
 import Login from './client-login/main-files(tsx)/Login'
 import './App.css'
 import Admin from './admin-login/main-files(tsx)/admin'
+import Dashboard from './client-login/main-files(tsx)/client-dashboard'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-
+          <Route path="/client-dashboard" element={<Dashboard/>}/>
           <Route path="/" element={<Login />}/>
           <Route path="/admin" element={<Admin />}/>
         </Routes>

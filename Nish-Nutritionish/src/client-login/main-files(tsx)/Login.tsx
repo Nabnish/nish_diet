@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import '../css-files/Login.css'
+import { useNavigate } from 'react-router-dom'
+
 
 
 function Login() {
@@ -19,9 +21,12 @@ function Login() {
     setError('')
   }
 
+  
+  const navigate = useNavigate();
+
   const handleSubmit = (e: React.FormEvent) =>  {
     e.preventDefault()
-    
+
     // Basic validation
     if (!credentials.name ) {
       setError('Please fill in all fields')
@@ -30,9 +35,9 @@ function Login() {
 
     // Here you would typically send credentials to your backend
     console.log('Login attempt:', credentials)
-    
-    // For demo purposes, you can add actual authentication logic here
-    // Example: if (credentials.email === 'user@example.com' && credentials.password === 'password') { ... }
+
+    // On successful login navigate to client dashboard
+    navigate('/client-dashboard')
   }
 
 
