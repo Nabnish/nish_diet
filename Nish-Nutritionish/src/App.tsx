@@ -1,12 +1,18 @@
-import Login from './Login'
+import Login from './client-login/main-files(tsx)/Login'
 import './App.css'
-import Admin from './admin'
+import Admin from './admin-login/main-files(tsx)/admin'
+import { BrowserRouter,Route,Routes } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <Login />
-      <Admin />
+      <BrowserRouter>
+        <Routes>
+
+          <Route path="/" element={<Login />}/>
+          <Route path="/admin" element={<Admin />}/>
+        </Routes>
+      </BrowserRouter>
 
     </div>
   )

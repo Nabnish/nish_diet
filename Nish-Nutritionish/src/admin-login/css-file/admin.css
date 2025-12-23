@@ -1,0 +1,51 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.login {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.login ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: rgba(255, 240, 230, 0.3);
+    /* Translucent peach/off-white upper part */
+    border-radius: 30px 30px 0 0;
+    z-index: 1;
+}
+
+.form1 {
+    position: relative;
+    z-index: 2;
+    padding: 3rem 2.5rem;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 250, 245, 0.5) 0%,
+      rgba(255, 248, 240, 0.95) 40%,
+      #fffaf5 100%
+    );
+    /* Subtle gradient from translucent to opaque */
+}
+
+.Heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+  }

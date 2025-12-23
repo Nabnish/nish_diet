@@ -77,7 +77,7 @@ function Login() {
             <div className="login-footer">
               
               <p className="signup-link">
-                Admin?<a href="#">Click here</a>
+                Admin?<a href="/admin">Click here</a>
               </p>
             </div>
           </div>
