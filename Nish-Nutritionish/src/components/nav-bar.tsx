@@ -9,6 +9,7 @@ function Nav() {
                 <h1>NISH-Nutritionish</h1>
                 <button onClick={() => Navigate("/client-dashboard")}>Dashboard</button>
                 <button onClick={() => Navigate("/client-diet")}>Diet Plan</button>
+                
             </div>
         </>
     )
