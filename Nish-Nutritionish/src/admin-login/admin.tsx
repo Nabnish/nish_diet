@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import '../css-file/admin.css'
 
 
 function Admin() {

@@ -1,7 +1,7 @@
-import Login from './client-login/main-files(tsx)/Login'
+import Login from './client-login/Login'
 import './App.css'
-import Admin from './admin-login/main-files(tsx)/admin'
-import Dashboard from './client-login/main-files(tsx)/client-dashboard'
+import Admin from './admin-login/admin'
+import Dashboard from './client-login/client-dashboard'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 
 function App() {

@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import Nav from '../../components/nav-bar';
+import Nav from '../components/nav-bar';
 
 
 function Dashboard() {
